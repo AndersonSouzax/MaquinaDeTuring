@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/> 
+    </head>
+<body>
+ <!-- Biblioteca para mostrar o numero decimal que representa a máquiana de turing-->
+<script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+<script src="maqTuring.js"> </script>
+
+<header><h1>Máquina de turing</h1></header>
+ <div class="antes">
+   <label for="inicial">Estados: </label>
+   <input type="text" size="30px" id="estados" />&nbsp
+   <label for="inicial">Alfabeto: </label>
+   <input type="text" size="30px" id="simAlfa" />&nbsp
+   <label for="inicial">Símb. da fita: </label>
+   <input type="text" size="30px" id="simFita" />&nbsp
+   <label for="inicial">Estado inicial: </label>
+   <input type="text" size="10px" id="inicial" /><br/><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <label for="finais">Est. Finais: </label>
+   <input type="text" size="10px" id="finais"/>&nbsp
+   <label for="matriz">Regras: </label>
+   <input type="text" size="50px" id="matriz" />
+ </div>
+ <br/><br/>
+ <div class="main">
+  <label for="fita">Fita: </label>
+  <input type="text" size="30px" id="fita"/ required><br/><br/>
+  &nbsp&nbsp<button type="button" id="botao" onclick="processar()">Testar</button><br/><br/>
+  <form id="re">
+  &nbsp<input type="radio" name="rec" value="reco" checked>Reconhecedora
+  &nbsp<input type="radio" name="rec" value="ger">Geradora
+  </form>
+</div>
+ <br/>
+ <br/>
+<div id="message" style="text-align:center; height:100px; with:100%;">
+  
+</div>
+<br/><br/>
+<div id="trace" style=" height:200px; with:100%; color:darkviolet;">
+  
+</div>
+</body>
+</html>
